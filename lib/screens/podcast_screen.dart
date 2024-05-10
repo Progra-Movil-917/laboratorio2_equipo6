@@ -1,32 +1,19 @@
 import 'package:flutter/material.dart';
 
-class ReproductorWidget extends StatefulWidget {
-  const ReproductorWidget({super.key});
+class PodcastScreen extends StatelessWidget {
+  const PodcastScreen({super.key});
 
-  @override
-  Reproductor_Widget createState() => Reproductor_Widget();
-}
-
-class Reproductor_Widget extends State<ReproductorWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 243, 238, 238),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 167, 164, 164),
-        elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {},
-        ),
-        title: Text("App CEUTEC"),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.more_vert),
+          backgroundColor: Colors.grey,
+          elevation: 0,
+          leading: IconButton(
+            icon: const Icon(Icons.menu),
             onPressed: () {},
           ),
-        ],
-      ),
+          title: const Text("App CEUTEC")),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
@@ -39,36 +26,36 @@ class Reproductor_Widget extends State<ReproductorWidget> {
                 Container(
                   width: 200,
                   height: 200,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 69, 69, 70),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Icon(
                       Icons.music_note,
                       size: 90,
-                      color: const Color.fromARGB(255, 255, 254, 254),
+                      color: Color.fromARGB(255, 255, 254, 254),
                     ),
                   ),
                 ),
-                SizedBox(width: 20),
-                Column(
+                const SizedBox(width: 20),
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       "Cancion",
-                      style: TextStyle(color: Colors.black, fontSize: 40),
+                      style: TextStyle(color: Colors.black, fontSize: 25),
                     ),
                     SizedBox(height: 10),
                     Text(
                       "Artista",
-                      style: TextStyle(color: Colors.black, fontSize: 30),
+                      style: TextStyle(color: Colors.black, fontSize: 20),
                     ),
                   ],
                 ),
               ],
             ),
-            SizedBox(height: 30),
-            Row(
+            const SizedBox(height: 30),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Icon(
@@ -90,11 +77,11 @@ class Reproductor_Widget extends State<ReproductorWidget> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
               width: double.infinity,
               height: 5,
-              color: Color.fromARGB(255, 22, 67, 216),
+              color: const Color.fromARGB(255, 22, 67, 216),
             ),
           ],
         ),
