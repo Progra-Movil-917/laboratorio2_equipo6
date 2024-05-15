@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'screens/task_list_screen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
