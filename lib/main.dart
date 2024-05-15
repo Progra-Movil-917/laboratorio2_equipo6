@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/task_list_screen.dart';
+import 'package:laboratorio2_app/screens/podcast_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TaskListScreen(),
+      home: PodcastScreen(),
     );
   }
 }
