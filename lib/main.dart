@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:laboratorio2_app/screens/currency_converter_screen.dart';
 import 'package:laboratorio2_app/screens/menu_screen.dart';
 import 'package:laboratorio2_app/screens/task_list_screen.dart';
 
@@ -17,6 +18,12 @@ final GoRouter _router = GoRouter(
           path: 'tareas',
           builder: (BuildContext context, GoRouterState state) {
             return TaskListScreen();
+          },
+        ),
+        GoRoute(
+          path: 'monedas',
+          builder: (BuildContext context, GoRouterState state) {
+            return CurrencyConverterScreen();
           },
         ),
       ],
