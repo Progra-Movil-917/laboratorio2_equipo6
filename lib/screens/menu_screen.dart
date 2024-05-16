@@ -20,7 +20,9 @@ class MenuScreen extends StatelessWidget {
               Icons.arrow_forward,
               size: 25,
             ),
-            onTap: () {},
+            onTap: () {
+              context.go('/noticias');
+            },
           ),
           const Divider(),
           ListTile(
