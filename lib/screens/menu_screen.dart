@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
@@ -29,7 +30,9 @@ class MenuScreen extends StatelessWidget {
               Icons.arrow_forward,
               size: 25,
             ),
-            onTap: () {},
+            onTap: () {
+              context.go('/tareas');
+            },
           ),
           const Divider(),
           ListTile(

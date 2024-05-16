@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:laboratorio2_app/screens/menu_screen.dart';
+import 'package:laboratorio2_app/screens/task_list_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +12,14 @@ final GoRouter _router = GoRouter(
       builder: (BuildContext context, GoRouterState state) {
         return const MenuScreen();
       },
-      routes: const <RouteBase>[],
+      routes: <RouteBase>[
+        GoRoute(
+          path: 'tareas',
+          builder: (BuildContext context, GoRouterState state) {
+            return TaskListScreen();
+          },
+        ),
+      ],
     ),
   ],
 );
