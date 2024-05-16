@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:laboratorio2_app/screens/currency_converter_screen.dart';
 import 'package:laboratorio2_app/screens/menu_screen.dart';
 import 'package:laboratorio2_app/screens/news_screen.dart';
+import 'package:laboratorio2_app/screens/podcast_screen.dart';
 import 'package:laboratorio2_app/screens/task_list_screen.dart';
 
 void main() => runApp(const MyApp());
@@ -31,6 +32,12 @@ final GoRouter _router = GoRouter(
           path: 'noticias',
           builder: (BuildContext context, GoRouterState state) {
             return NewsScreen();
+          },
+        ),
+        GoRoute(
+          path: 'podcast',
+          builder: (BuildContext context, GoRouterState state) {
+            return PodcastScreen();
           },
         ),
       ],

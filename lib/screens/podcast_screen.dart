@@ -7,12 +7,7 @@ class PodcastScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.grey,
           elevation: 0,
-          leading: IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () {},
-          ),
           title: const Text("App CEUTEC")),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
